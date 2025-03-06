@@ -2,7 +2,7 @@
 const teamMembers = [
   {
     name: "Nimna Ekanayake",
-    role: "Founder and Developer",
+    role: "Founder and Game Developer",
     image: "images/Nimna2.jpg",
     github: "https://github.com/Nimnaek24",
     linkedin: "https://www.linkedin.com/in/nimna-ekanayake-b07181310/",
@@ -10,7 +10,7 @@ const teamMembers = [
   },
   {
     name: "Ashinshanee Indrachapa",
-    role: "Founder and Developer",
+    role: "Founder and Game Developer",
     image: "images/Ashi.jpg",
     github: "https://github.com/Ashinshanee02",
     linkedin: "https://www.linkedin.com/in/ashiathukorala",
@@ -23,15 +23,6 @@ const teamMembers = [
     github: "https://github.com/Sithuprabashvi",
     linkedin: "https://www.linkedin.com/in/sithu-yasaswara-797717331/",
     email: "https://github.com/Sithuprabashvi",
-  },
-  {
-    name: "Sinthujan Rathakrishnan",
-    role: "Fullstack Developer",
-    image: "images/Sinthujan.jpg",
-    github: "https://github.com/Sinthuuuh",
-    linkedin:
-      "https://www.linkedin.com/in/sinthujan-rathakrishnan-8b11b62a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    email: "mailto:sinthujan.20221553@iit.ac.lk",
   },
   {
     name: "Esandi Rodrigo",
