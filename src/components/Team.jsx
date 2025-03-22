@@ -2,7 +2,7 @@
 const teamMembers = [
   {
     name: "Nimna Ekanayake",
-    role: "Founder and Game Developer",
+    role: "Co-Founder, Game Developer & Tech Lead",
     image: "images/Nimna2.jpg",
     github: "https://github.com/Nimnaek24",
     linkedin: "https://www.linkedin.com/in/nimna-ekanayake-b07181310/",
@@ -10,7 +10,7 @@ const teamMembers = [
   },
   {
     name: "Ashinshanee Indrachapa",
-    role: "Founder and Game Developer",
+    role: "Co-Founder, Game Developer & Project Manager",
     image: "images/Ashi.jpg",
     github: "https://github.com/Ashinshanee02",
     linkedin: "https://www.linkedin.com/in/ashiathukorala",
@@ -26,7 +26,7 @@ const teamMembers = [
   },
   {
     name: "Esandi Rodrigo",
-    role: "Fullstack Developer",
+    role: "Backend Developer",
     image: "images/Esandi.jpg",
     github: "https://github.com/esandirodrigo",
     linkedin:
@@ -35,7 +35,7 @@ const teamMembers = [
   },
   {
     name: "Chithya Dewmini",
-    role: "Fullstack Developer",
+    role: "Frontend Developer",
     image: "images/Dewmini.jpg",
     github: "https://github.com/dew0527",
     linkedin: "https://www.linkedin.com/in/kulasinge-dewmini-395a91292",
