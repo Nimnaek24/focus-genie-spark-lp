@@ -33,7 +33,7 @@ const About = () => {
             <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
               At FocusGenie, our mission is to create a magical, inclusive
               learning experience that caters to the unique needs of children
-              with Attention-Based Disorders. By blending gamified learning,
+              with ADHD. By blending gamified learning,
               AI-driven insights, and a supportive community, we aim to empower
               children, support parents, and foster collaboration among
               educators and consultants.
