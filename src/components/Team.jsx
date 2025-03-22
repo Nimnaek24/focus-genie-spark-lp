@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "Sithu Prabhashvi",
     role: "Fullstack Developer",
-    image: "images/sithu.jpg",
+    image: "images/Sithu.jpg",
     github: "https://github.com/Sithuprabashvi",
     linkedin: "https://www.linkedin.com/in/sithu-yasaswara-797717331/",
     email: "https://github.com/Sithuprabashvi",
@@ -36,7 +36,7 @@ const teamMembers = [
   {
     name: "Chithya Dewmini",
     role: "Frontend Developer",
-    image: "images/dewmini.jpg",
+    image: "images/Dewmini.jpg",
     github: "https://github.com/dew0527",
     linkedin: "https://www.linkedin.com/in/kulasinge-dewmini-395a91292",
     email: "mailto:chithya.20231275@iit.ac.lk",
