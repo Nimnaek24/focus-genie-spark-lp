@@ -44,7 +44,7 @@ const ContactSection = () => {
       {/* Footer */}
       <footer className="mt-12 text-center text-gray-600">
         <p>
-          Built by <span className="font-semibold">Team FocusGenie</span>
+          Built by <span className="font-semibold">Team GenieWhiz</span>
         </p>
         <p>All rights reserved. © {new Date().getFullYear()}</p>
         {/* Social Media Icons */}
@@ -70,7 +70,7 @@ const ContactSection = () => {
           >
             <RiFacebookBoxFill className="text-3xl text-blue-600 hover:text-blue-700 transition" />
           </a>
-          <a href="mailto:focusgenie6@gmail.com">
+          <a href="mailto:GenieWhiz6@gmail.com">
             <RiMailFill className="text-3xl text-gray-800 hover:text-gray-900 transition" />
           </a>
         </div>
