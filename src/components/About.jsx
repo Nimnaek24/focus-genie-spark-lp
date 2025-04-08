@@ -31,7 +31,7 @@ const About = () => {
               Empower Every Child’s Learning Journey
             </p>
             <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
-              At FocusGenie, our mission is to create a magical, inclusive
+              At GenieWhiz, our mission is to create a magical, inclusive
               learning experience that caters to the unique needs of children
               with ADHD. By blending gamified learning,
               AI-driven insights, and a supportive community, we aim to empower
