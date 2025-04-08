@@ -8,7 +8,7 @@ const GradientCards = () => {
           {
             title: "Personalized Learning",
             description:
-              "FocusGenie tailors games and activities to meet the unique needs of children with ADHD, Autism, and Dyslexia, ensuring every child feels supported and engaged.",
+              "GenieWhiz tailors games and activities to meet the unique needs of children with ADHD, Autism, and Dyslexia, ensuring every child feels supported and engaged.",
             icon: "ri-user-heart-line",
             hueClass: "",
           },
