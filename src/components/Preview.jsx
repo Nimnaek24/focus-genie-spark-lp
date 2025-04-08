@@ -7,7 +7,7 @@ const ComingSoonSection = () => {
           The Magic Awaits
         </h2>
         <p className="text-lg mb-8 dark:text-white">
-          Get ready for an enchanting adventure! FocusGenie is coming soon to
+          Get ready for an enchanting adventure! GenieWhiz is coming soon to
           bring magic and learning to life.
         </p>
         <div className="relative w-full h-0 pb-[56.25%] mb-8">
@@ -23,7 +23,7 @@ const ComingSoonSection = () => {
         </div>
         <p className="text-md italic dark:text-white">
           *Stay tuned for the official launch and explore the magic of
-          FocusGenie soon!
+          GenieWhiz soon!
         </p>
       </div>
     </section>
