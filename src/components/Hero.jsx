@@ -20,7 +20,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
         <h1 className="text-4xl md:text-6xl font-bold">
-          FocusGenie for
+          GenieWhiz for
           <span
             className="font-bold ml-5"
             style={{
@@ -35,7 +35,7 @@ const Hero = () => {
           <Cursor />
         </h1>
         <p className="mt-4 text-lg md:text-xl leading-relaxed md:leading-relaxed w-3/4">
-          Welcome to FocusGenie! A revolutionary educational platform designed
+          Welcome to GenieWhiz! A revolutionary educational platform designed
           to support preschoolers with ADHD, Autism and Dyslexia through
           gamified learning and advanced insights.
         </p>
