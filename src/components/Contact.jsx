@@ -44,13 +44,13 @@ const ContactSection = () => {
       {/* Footer */}
       <footer className="mt-12 text-center text-gray-600">
         <p>
-          Built by <span className="font-semibold">Team GenieWhiz</span>
+          Built by <span className="font-semibold">Team NovaEd Labs</span>
         </p>
         <p>All rights reserved. © {new Date().getFullYear()}</p>
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-6 mt-6">
           <a
-            href="https://www.linkedin.com/company/focusgenie"
+            href="https://www.linkedin.com/company/sparkvoyage"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -63,14 +63,7 @@ const ContactSection = () => {
           >
             <RiInstagramFill className="text-3xl text-pink-500 hover:text-pink-600 transition" />
           </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61570566926438&mibextid=ZbWKwL"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <RiFacebookBoxFill className="text-3xl text-blue-600 hover:text-blue-700 transition" />
-          </a>
-          <a href="mailto:GenieWhiz6@gmail.com">
+          <a href="mailto:sparkvoyage2@gmail.com" target="_blank" rel="noopener noreferrer">
             <RiMailFill className="text-3xl text-gray-800 hover:text-gray-900 transition" />
           </a>
         </div>
