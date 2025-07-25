@@ -18,14 +18,6 @@ const teamMembers = [
   },
   {
     name: "Isuri Perera",
-    role: "AI & ML Engineer",
-    image: "images/Isuri.jpg",
-    github: "https://github.com/isuriperera1",
-    linkedin: "https://www.linkedin.com/in/isuriperera1",
-    email: "mailto:isuripe@gmail.com",
-  },
-  {
-    name: "Isuri Perera",
     role: "Data Scientist, ML Engineer",
     image: "images/Isuri.png",
     github: "https://github.com/isuriperera1",
