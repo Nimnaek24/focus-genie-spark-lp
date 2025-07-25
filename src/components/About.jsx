@@ -32,10 +32,10 @@ const About = () => {
             </p>
             <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
               At Spark Voyage, our mission is to create a magical, inclusive
-              learning experience that caters to the unique needs of children
+              learning experience that caters to the unique needs of Preschool Children
               with ADHD. By blending gamified learning,
               AI-driven insights, and a supportive community, we aim to empower
-              children, support parents, and foster collaboration among
+              preschool children with ADHD, support their parents, and foster collaboration among
               educators and consultants.
             </p>
             <button className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl transition duration-300">
