@@ -11,18 +11,10 @@ const teamMembers = [
   {
     name: "Ashinshanee Indrachapa",
     role: "Co-Founder, Game Developer & Tech Lead",
-    image: "images/Ashi.jpg",
+    image: "images/ashi.jpg",
     github: "https://github.com/Ashinshanee02",
     linkedin: "https://www.linkedin.com/in/ashiathukorala",
     email: "mailto:ashinshaneeindrachapa02@gmail.com",
-  },
-  {
-    name: "Isuri Perera",
-    role: "AI & ML Engineer",
-    image: "images/Isuri.jpg",
-    github: "https://github.com/isuriperera1",
-    linkedin: "https://www.linkedin.com/in/isuriperera1",
-    email: "mailto:isuripe@gmail.com",
   },
   {
     name: "Isuri Perera",
@@ -40,7 +32,7 @@ const TeamSection = () => {
     <section id="team" className="py-16 bg-gray-50 dark:bg-gray-900 lg:pt-[330px] pb-[100px]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl font-bold text-center mb-8 dark:text-white">
-          Meet Our Team
+          NovaEd Labs Team
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (

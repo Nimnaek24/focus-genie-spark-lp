@@ -1,7 +1,7 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ["ADHD", "AUTISM", "DYSLEXIA"],
+    words: ["Children", "Parents", "Educators"],
     loop: true,
     typeSpeed: 200,
     deleteSpeed: 100,
@@ -36,7 +36,7 @@ const Hero = () => {
         </h1>
         <p className="mt-4 text-lg md:text-xl leading-relaxed md:leading-relaxed w-3/4">
           Welcome to Spark Voyage! A revolutionary educational platform designed
-          to support preschoolers with ADHD, Autism and Dyslexia through
+          to support preschooler children with ADHD through
           gamified learning and advanced insights.
         </p>
         <button className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl transition duration-300">

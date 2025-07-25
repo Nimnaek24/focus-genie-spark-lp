@@ -70,7 +70,7 @@ const ContactSection = () => {
           >
             <RiFacebookBoxFill className="text-3xl text-blue-600 hover:text-blue-700 transition" />
           </a>
-          <a href="mailto:GenieWhiz6@gmail.com">
+          <a href="mailto:sparkvoyage2@gmail.com">
             <RiMailFill className="text-3xl text-gray-800 hover:text-gray-900 transition" />
           </a>
         </div>
