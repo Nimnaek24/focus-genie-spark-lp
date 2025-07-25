@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "Isuri Perera",
     role: "Data Scientist, ML Engineer",
-    image: "images/Isuri.png",
+    image: "images/isuri.jpg",
     github: "https://github.com/isuriperera1",
     linkedin: "https://www.linkedin.com/in/isuri-perera1/",
     email: "mailto:isuripe@gmail.com",
