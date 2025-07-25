@@ -63,7 +63,14 @@ const ContactSection = () => {
           >
             <RiInstagramFill className="text-3xl text-pink-500 hover:text-pink-600 transition" />
           </a>
-          <a href="mailto:sparkvoyage2@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/profile.php?id=61570566926438&mibextid=ZbWKwL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <RiFacebookBoxFill className="text-3xl text-blue-600 hover:text-blue-700 transition" />
+          </a>
+          <a href="mailto:GenieWhiz6@gmail.com">
             <RiMailFill className="text-3xl text-gray-800 hover:text-gray-900 transition" />
           </a>
         </div>

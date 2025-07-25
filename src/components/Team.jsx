@@ -24,12 +24,20 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/isuriperera1",
     email: "mailto:isuripe@gmail.com",
   },
+  {
+    name: "Isuri Perera",
+    role: "Data Scientist, ML Engineer",
+    image: "images/Isuri.png",
+    github: "https://github.com/isuriperera1",
+    linkedin: "https://www.linkedin.com/in/isuri-perera1/",
+    email: "mailto:isuripe@gmail.com",
+  },
   
 ];
 
 const TeamSection = () => {
   return (
-    <section id="team" className="py-16 bg-gray-50 dark:bg-gray-900 lg:pt-[330px]">
+    <section id="team" className="py-16 bg-gray-50 dark:bg-gray-900 lg:pt-[330px] pb-[100px]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl font-bold text-center mb-8 dark:text-white">
           Meet Our Team
