@@ -6,7 +6,7 @@ const teamMembers = [
     image: "images/Nimna2.jpg",
     github: "https://github.com/Nimnaek24",
     linkedin: "https://www.linkedin.com/in/nimna-ekanayake-b07181310/",
-    email: "mailto:nimna.20230081@iit.ac.lk",
+    email: "mailto:nimnaek24@gmail.com",
   },
   {
     name: "Ashinshanee Indrachapa",
@@ -14,7 +14,15 @@ const teamMembers = [
     image: "images/Ashi.jpg",
     github: "https://github.com/Ashinshanee02",
     linkedin: "https://www.linkedin.com/in/ashiathukorala",
-    email: "mailto:ashinshanee.20230006@iit.ac.lk",
+    email: "mailto:ashinshaneeindrachapa02@gmail.com",
+  },
+  {
+    name: "Isuri Perera",
+    role: "AI & ML Engineer",
+    image: "images/Isuri.jpg",
+    github: "https://github.com/isuriperera1",
+    linkedin: "https://www.linkedin.com/in/isuriperera1",
+    email: "mailto:isuripe@gmail.com",
   },
   
 ];
