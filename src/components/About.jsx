@@ -17,7 +17,7 @@ const About = () => {
           <div className="flex-shrink-0 mb-8 md:mb-0 md:w-1/3 relative">
             <img
               src="images/AboutGenie.png" // Change the image path here
-              alt="Genie Image"
+              alt="Spark Voyage Image"
               className="w-auto h-[400px] object-cover z-10 relative"
             />
           </div>
@@ -31,7 +31,7 @@ const About = () => {
               Empower Every Child’s Learning Journey
             </p>
             <p className="mt-4 text-base text-gray-600 dark:text-gray-400">
-              At GenieWhiz, our mission is to create a magical, inclusive
+              At Spark Voyage, our mission is to create a magical, inclusive
               learning experience that caters to the unique needs of children
               with ADHD. By blending gamified learning,
               AI-driven insights, and a supportive community, we aim to empower

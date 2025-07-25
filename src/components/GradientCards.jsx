@@ -8,14 +8,14 @@ const GradientCards = () => {
           {
             title: "Personalized Learning",
             description:
-              "GenieWhiz tailors games and activities to meet the unique needs of children with ADHD, Autism, and Dyslexia, ensuring every child feels supported and engaged.",
+              "Spark Voyage tailors games and activities to meet the unique needs of children with ADHD, Autism, and Dyslexia, ensuring every child feels supported and engaged.",
             icon: "ri-user-heart-line",
             hueClass: "",
           },
           {
             title: "Gamified Learning",
             description:
-              "Through gamified learning, FocusGenie turns skill-building into an exciting adventure, keeping children motivated and eager to learn.",
+              "Through gamified learning, Spark Voyage turns skill-building into an exciting adventure, keeping children motivated and eager to learn.",
             icon: "ri-gamepad-line",
             hueClass: "card__orange",
           },
@@ -29,7 +29,7 @@ const GradientCards = () => {
           {
             title: "IoT Integration",
             description:
-              "With optional IoT tools, FocusGenie helps optimize noise, lighting, and temperature, creating the perfect space for your child to focus and thrive.",
+              "With optional IoT tools, Spark Voyage helps optimize noise, lighting, and temperature, creating the perfect space for your child to focus and thrive.",
             icon: "ri-wifi-line",
             hueClass: "card__red",
           },
