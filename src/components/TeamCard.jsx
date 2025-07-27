@@ -226,22 +226,23 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400"
+                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-400"
               >
                 <div
-                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-60 transition-all duration-400"
-                  style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                  }}
-                ></div>
-                <div
-                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm hover:border-transparent transition-all duration-400 bg-white/95 dark:bg-slate-700/50"
+                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm transition-all duration-400 bg-white/95 dark:bg-slate-700/50 overflow-hidden"
                   style={{
                     borderColor: `${gradientFrom}40`,
+                    boxShadow: `0 4px 15px rgba(0,0,0,0.1), inset 0 0 0 1px ${gradientFrom}20`,
                   }}
                 >
+                  <div
+                    className="absolute inset-0 rounded-xl opacity-0 group-hover/social:opacity-20 transition-all duration-400"
+                    style={{
+                      background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                    }}
+                  ></div>
                   <svg
-                    className="w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
+                    className="relative z-10 w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
                     style={{ color: gradientFrom }}
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -256,22 +257,23 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400"
+                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-400"
               >
                 <div
-                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-60 transition-all duration-400"
-                  style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                  }}
-                ></div>
-                <div
-                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm hover:border-transparent transition-all duration-400 bg-white/95 dark:bg-slate-700/50"
+                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm transition-all duration-400 bg-white/95 dark:bg-slate-700/50 overflow-hidden"
                   style={{
                     borderColor: `${gradientFrom}40`,
+                    boxShadow: `0 4px 15px rgba(0,0,0,0.1), inset 0 0 0 1px ${gradientFrom}20`,
                   }}
                 >
+                  <div
+                    className="absolute inset-0 rounded-xl opacity-0 group-hover/social:opacity-20 transition-all duration-400"
+                    style={{
+                      background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                    }}
+                  ></div>
                   <svg
-                    className="w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
+                    className="relative z-10 w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
                     style={{ color: gradientFrom }}
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -284,22 +286,23 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
               {/* Email */}
               <a
                 href={`mailto:${email}`}
-                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400"
+                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-400"
               >
                 <div
-                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-60 transition-all duration-400"
-                  style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                  }}
-                ></div>
-                <div
-                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm hover:border-transparent transition-all duration-400 bg-white/95 dark:bg-slate-700/50"
+                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm transition-all duration-400 bg-white/95 dark:bg-slate-700/50 overflow-hidden"
                   style={{
                     borderColor: `${gradientFrom}40`,
+                    boxShadow: `0 4px 15px rgba(0,0,0,0.1), inset 0 0 0 1px ${gradientFrom}20`,
                   }}
                 >
+                  <div
+                    className="absolute inset-0 rounded-xl opacity-0 group-hover/social:opacity-20 transition-all duration-400"
+                    style={{
+                      background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                    }}
+                  ></div>
                   <svg
-                    className="w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
+                    className="relative z-10 w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
                     style={{ color: gradientFrom }}
                     fill="none"
                     stroke="currentColor"
@@ -318,17 +321,12 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
               {/* Close/Back Button */}
               <button
                 onClick={() => setShowSocials(false)}
-                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400 ml-2"
+                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-400 ml-2"
               >
-                <div
-                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-40 transition-all duration-400"
-                  style={{
-                    background: "linear-gradient(135deg, #ef4444, #dc2626)",
-                  }}
-                ></div>
-                <div className="relative w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border-2 bg-white/90 dark:bg-slate-800/90 hover:bg-red-50 dark:hover:bg-red-950/50 hover:border-red-300 transition-all duration-400 backdrop-blur-sm">
+                <div className="relative w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border-2 bg-white/90 dark:bg-slate-800/90 hover:bg-red-50 dark:hover:bg-red-950/50 hover:border-red-300 transition-all duration-400 backdrop-blur-sm overflow-hidden">
+                  <div className="absolute inset-0 rounded-xl bg-red-500/10 opacity-0 group-hover/social:opacity-100 transition-all duration-400"></div>
                   <svg
-                    className="w-5 h-5 text-gray-500 group-hover/social:text-red-500 transition-all duration-400 group-hover/social:scale-110"
+                    className="relative z-10 w-5 h-5 text-gray-500 group-hover/social:text-red-500 transition-all duration-400 group-hover/social:scale-110"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
