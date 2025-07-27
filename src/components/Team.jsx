@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: "Isuri Perera",
-    role: "Data Scientist, AI & ML Engineer",
+    role: "Data Scientist, AI/ML Engineer & Software Developer",
     image: "images/isuri.jpg",
     github: "https://github.com/isuriperera1",
     linkedin: "https://www.linkedin.com/in/isuri-perera1/",
@@ -32,7 +32,7 @@ const TeamSection = () => {
   return (
     <section
       id="team"
-      className="py-16 bg-gray-50 dark:bg-gray-900 lg:pt-[330px] pb-[150px]"
+      className="py-16 bg-gray-50 dark:bg-gray-900 lg:pt-[400px] pb-[150px]"
     >
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl font-bold text-center mb-[70px] dark:text-white">
