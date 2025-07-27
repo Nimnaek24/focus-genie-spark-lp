@@ -20,75 +20,118 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
 
   return (
     <div className="relative group">
+      {/* Animated background glow */}
+      <div
+        className="absolute -inset-4 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-all duration-700 animate-pulse"
+        style={{
+          background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+        }}
+      ></div>
+
       {/* Main card */}
       <div
-        className="relative w-[380px] h-[460px] bg-white dark:bg-slate-900 p-8 shadow-lg flex flex-col items-center transition-all duration-300 hover:scale-[1.02] border border-gray-200 dark:border-slate-700"
+        className="relative w-[380px] h-[460px] backdrop-blur-xl p-8 shadow-2xl flex flex-col items-center transition-all duration-500 hover:scale-[1.03] hover:shadow-3xl border border-white/20 dark:border-slate-700/30 bg-white/95 dark:bg-slate-800/30"
         style={{
           borderRadius: "2rem 2rem 2rem 2rem",
           clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%)",
         }}
       >
+        {/* Decorative corner accent */}
+        <div
+          className="absolute top-0 right-0 w-20 h-20 opacity-10 dark:opacity-20"
+          style={{
+            background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+            clipPath: "polygon(100% 0%, 100% 85%, 85% 100%, 100% 100%)",
+          }}
+        ></div>
+
         {/* Profile Image */}
         <div className="relative mb-6 group/image">
+          {/* Outer glow ring */}
           <div
-            className="absolute -inset-2 rounded-full blur-lg opacity-20 group-hover/image:opacity-40 transition-all duration-500"
+            className="absolute -inset-4 rounded-full blur-xl opacity-0 group-hover/image:opacity-50 transition-all duration-700"
             style={{
-              background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+              background: `conic-gradient(from 0deg, ${gradientFrom}, ${gradientTo}, ${gradientFrom})`,
+            }}
+          ></div>
+
+          {/* Rotating border ring */}
+          <div
+            className="absolute -inset-3 rounded-full opacity-60 group-hover/image:opacity-100 transition-all duration-700"
+            style={{
+              background: `conic-gradient(from 0deg, ${gradientFrom}, transparent, ${gradientTo}, transparent, ${gradientFrom})`,
+              animation: "spin 8s linear infinite",
             }}
           ></div>
 
           <div
-            className="relative w-40 h-40 rounded-full p-1 bg-gradient-to-br shadow-lg transform group-hover/image:scale-105 transition-all duration-500"
+            className="relative w-40 h-40 rounded-full p-1 shadow-2xl transform group-hover/image:scale-110 transition-all duration-700"
             style={{
               backgroundImage: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
             }}
           >
-            <div className="w-full h-full rounded-full p-1 bg-white dark:bg-slate-800">
+            <div className="w-full h-full rounded-full p-1 bg-white dark:bg-slate-800/90 backdrop-blur-sm">
               <img
                 src={image}
                 alt={name}
-                className="w-full h-full object-cover rounded-full shadow-md transform group-hover/image:scale-105 transition-all duration-500"
+                className="w-full h-full object-cover rounded-full shadow-lg transform group-hover/image:scale-105 transition-all duration-700"
               />
             </div>
           </div>
 
-          {/* Floating particles */}
+          {/* Enhanced floating particles */}
           <div className="absolute inset-0 pointer-events-none">
             <div
-              className="absolute top-2 right-4 w-2 h-2 rounded-full opacity-70 animate-bounce"
+              className="absolute top-2 right-4 w-3 h-3 rounded-full opacity-70 animate-bounce shadow-lg"
               style={{
-                background: gradientFrom,
+                background: `radial-gradient(circle, ${gradientFrom}, ${gradientFrom}80)`,
                 animationDelay: "0.5s",
+                boxShadow: `0 0 10px ${gradientFrom}50`,
               }}
             ></div>
             <div
-              className="absolute bottom-6 left-2 w-1.5 h-1.5 rounded-full opacity-60 animate-bounce"
+              className="absolute bottom-6 left-2 w-2 h-2 rounded-full opacity-60 animate-bounce shadow-lg"
               style={{
-                background: gradientTo,
+                background: `radial-gradient(circle, ${gradientTo}, ${gradientTo}80)`,
                 animationDelay: "1s",
+                boxShadow: `0 0 8px ${gradientTo}50`,
               }}
             ></div>
             <div
-              className="absolute top-8 left-6 w-1 h-1 rounded-full opacity-50 animate-bounce"
+              className="absolute top-8 left-6 w-1.5 h-1.5 rounded-full opacity-50 animate-bounce shadow-lg"
               style={{
                 background: `linear-gradient(45deg, ${gradientFrom}, ${gradientTo})`,
                 animationDelay: "1.5s",
+                boxShadow: `0 0 6px ${gradientFrom}40`,
+              }}
+            ></div>
+            <div
+              className="absolute top-16 right-8 w-1 h-1 rounded-full opacity-40 animate-bounce shadow-sm"
+              style={{
+                background: gradientTo,
+                animationDelay: "2s",
               }}
             ></div>
           </div>
         </div>
 
         {/* Name & Role */}
-        <div className="text-center mb-8 space-y-2">
+        <div className="text-center mb-8 space-y-3">
           <h3
-            className="text-2xl font-bold text-transparent bg-clip-text leading-tight"
+            className="text-2xl font-bold text-transparent bg-clip-text leading-tight drop-shadow-sm"
             style={{
               backgroundImage: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
             }}
           >
             {name}
           </h3>
-          <p className="text-gray-600 dark:text-slate-400 text-sm font-medium tracking-wide px-4 leading-relaxed">
+          <div
+            className="h-0.5 w-16 mx-auto rounded-full opacity-60"
+            style={{
+              background: `linear-gradient(90deg, ${gradientFrom}, ${gradientTo})`,
+            }}
+          ></div>
+          <p className="text-gray-600 dark:text-slate-300 text-sm font-medium tracking-wide px-4 leading-relaxed">
             {role}
           </p>
         </div>
@@ -107,37 +150,36 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
               onClick={() => setShowSocials(true)}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="group relative transition-transform duration-300 hover:scale-105"
+              className="group relative transition-all duration-500 hover:scale-110"
               style={{ borderRadius: "2rem" }}
             >
+              {/* Button glow effect */}
               <div
-                className="inline-flex items-center gap-3 px-8 py-3 text-sm font-medium transition-all duration-500 border shadow-lg"
+                className={`absolute -inset-2 rounded-full blur-lg transition-all duration-500 ${
+                  isHovered ? "opacity-60" : "opacity-0"
+                }`}
+                style={{
+                  background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                }}
+              ></div>
+
+              <div
+                className="relative inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold transition-all duration-500 border-2 shadow-xl backdrop-blur-sm bg-white/95 dark:bg-slate-700/50"
                 style={{
                   background: isHovered
                     ? `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`
-                    : `linear-gradient(135deg, ${gradientFrom}15, ${gradientTo}15)`,
+                    : undefined,
                   color: isHovered ? "white" : gradientFrom,
-                  borderColor: `${gradientFrom}40`,
+                  borderColor: isHovered ? "transparent" : `${gradientFrom}60`,
                   borderRadius: "2rem",
+                  boxShadow: isHovered 
+                    ? `0 20px 40px ${gradientFrom}30, 0 0 0 1px ${gradientFrom}20`
+                    : `0 10px 25px rgba(0,0,0,0.1), 0 0 0 1px ${gradientFrom}20`,
                 }}
               >
                 <svg
-                  className="w-5 h-5 transition-transform duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-                <span className="tracking-wide">Connect With Me</span>
-                <svg
-                  className={`w-4 h-4 transition-transform duration-300 ${
-                    isHovered ? "translate-x-1" : ""
+                  className={`w-5 h-5 transition-all duration-500 ${
+                    isHovered ? "rotate-90 scale-110" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -146,7 +188,23 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
+                    strokeWidth={2.5}
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  />
+                </svg>
+                <span className="tracking-wide font-medium">Connect With Me</span>
+                <svg
+                  className={`w-4 h-4 transition-all duration-500 ${
+                    isHovered ? "translate-x-2 scale-110" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
@@ -168,17 +226,22 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-300"
+                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400"
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border"
+                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-60 transition-all duration-400"
                   style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}20, ${gradientTo}20)`,
+                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                  }}
+                ></div>
+                <div
+                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm hover:border-transparent transition-all duration-400 bg-white/95 dark:bg-slate-700/50"
+                  style={{
                     borderColor: `${gradientFrom}40`,
                   }}
                 >
                   <svg
-                    className="w-6 h-6"
+                    className="w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
                     style={{ color: gradientFrom }}
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -193,17 +256,22 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-300"
+                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400"
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border"
+                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-60 transition-all duration-400"
                   style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}20, ${gradientTo}20)`,
+                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                  }}
+                ></div>
+                <div
+                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm hover:border-transparent transition-all duration-400 bg-white/95 dark:bg-slate-700/50"
+                  style={{
                     borderColor: `${gradientFrom}40`,
                   }}
                 >
                   <svg
-                    className="w-6 h-6"
+                    className="w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
                     style={{ color: gradientFrom }}
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -216,17 +284,22 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
               {/* Email */}
               <a
                 href={`mailto:${email}`}
-                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-300"
+                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400"
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border"
+                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-60 transition-all duration-400"
                   style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}20, ${gradientTo}20)`,
+                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                  }}
+                ></div>
+                <div
+                  className="relative w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border-2 backdrop-blur-sm hover:border-transparent transition-all duration-400 bg-white/95 dark:bg-slate-700/50"
+                  style={{
                     borderColor: `${gradientFrom}40`,
                   }}
                 >
                   <svg
-                    className="w-6 h-6"
+                    className="w-7 h-7 transition-all duration-400 group-hover/social:scale-110"
                     style={{ color: gradientFrom }}
                     fill="none"
                     stroke="currentColor"
@@ -245,17 +318,17 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
               {/* Close/Back Button */}
               <button
                 onClick={() => setShowSocials(false)}
-                className="group/social relative overflow-hidden transform hover:scale-110 transition-all duration-300 ml-2"
+                className="group/social relative overflow-hidden transform hover:scale-125 transition-all duration-400 ml-2"
               >
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg border hover:bg-red-50 dark:hover:bg-red-950 transition-colors duration-300"
+                  className="absolute -inset-1 rounded-xl blur opacity-0 group-hover/social:opacity-40 transition-all duration-400"
                   style={{
-                    background: `linear-gradient(135deg, ${gradientFrom}10, ${gradientTo}10)`,
-                    borderColor: `${gradientFrom}30`,
+                    background: "linear-gradient(135deg, #ef4444, #dc2626)",
                   }}
-                >
+                ></div>
+                <div className="relative w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border-2 bg-white/90 dark:bg-slate-800/90 hover:bg-red-50 dark:hover:bg-red-950/50 hover:border-red-300 transition-all duration-400 backdrop-blur-sm">
                   <svg
-                    className="w-5 h-5 text-gray-500 hover:text-red-500 transition-colors duration-300"
+                    className="w-5 h-5 text-gray-500 group-hover/social:text-red-500 transition-all duration-400 group-hover/social:scale-110"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -263,7 +336,7 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth={2}
+                      strokeWidth={2.5}
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
@@ -273,6 +346,17 @@ const TeamCard = ({ name, role, image, github, linkedin, email }) => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      `}</style>
     </div>
   );
 };
