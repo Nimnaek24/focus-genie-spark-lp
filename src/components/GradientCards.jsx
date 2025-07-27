@@ -6,44 +6,44 @@ const GradientCards = () => {
       <div className="card__container dark:bg-gray-900">
         {[
           {
-            title: "Personalized Learning",
+            title: "AI-Powered Virtual Companion (Spark)",
             description:
-              "Spark Voyage tailors games and activities to meet the unique needs of children with ADHD, Autism, and Dyslexia, ensuring every child feels supported and engaged.",
+              "An intelligent virtual character that adapts interactions in real-time based on child engagement patterns using GPT-4 and Text-to-Speech technology.",
             icon: "ri-user-heart-line",
             hueClass: "",
           },
           {
-            title: "Gamified Learning",
+            title: "Gamified Learning Adventures",
             description:
-              "Through gamified learning, Spark Voyage turns skill-building into an exciting adventure, keeping children motivated and eager to learn.",
+              "Interactive Unity-based adventure games specifically designed for preschool children with ADHD to maintain engagement while building cognitive skills.",
             icon: "ri-gamepad-line",
             hueClass: "card__orange",
           },
           {
-            title: "Real-Time Monitoring",
+            title: "IoT Wearable Device Integration",
             description:
-              "Our AI-driven monitoring helps track your child’s progress, identify strengths and challenges, and adapt activities dynamically for effective results.",
+              "Nordic nRF52-based wearable that captures heart rate, sleep patterns, and activity data via Bluetooth to correlate with gameplay performance.",
             icon: "ri-pulse-line",
             hueClass: "card__green",
           },
           {
-            title: "IoT Integration",
+            title: "Magic Crystal Ball (IoT Sensory Tool)",
             description:
-              "With optional IoT tools, Spark Voyage helps optimize noise, lighting, and temperature, creating the perfect space for your child to focus and thrive.",
+              "A tangible device with LED lights, pressure sensors, and vibration feedback that helps children with emotional regulation and calming.",
             icon: "ri-wifi-line",
             hueClass: "card__red",
           },
           {
-            title: "Parent Dashboard",
+            title: "Real-Time Adaptive Learning System",
             description:
-              "Join a community of parents and caregivers who understand the journey, share experiences, and access valuable resources like expert webinars and forums.",
+              "Proprietary algorithm that dynamically adjusts educational content based on gameplay performance, physiological signals, and behavioral patterns.",
             icon: "ri-dashboard-line",
             hueClass: "card__yellow",
           },
           {
-            title: "Community Portal",
+            title: "Comprehensive Parental Dashboard",
             description:
-              "Easily access detailed progress reports, collaborate with educators and healthcare providers, and make informed decisions about your child’s development.",
+              "Mobile app that provides parents with actionable insights on their child's progress, sleep quality, activity levels, and personalized intervention recommendations.",
             icon: "ri-community-line",
             hueClass: "card__purple",
           },
