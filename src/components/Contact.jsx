@@ -64,26 +64,30 @@ const ContactSection = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full blur opacity-20 group-hover:opacity-40 transition-all duration-500"></div>
                 
-                <div className="relative flex items-center bg-white/90 dark:bg-slate-700/50 backdrop-blur-sm border-2 border-white/50 dark:border-slate-600/50 rounded-full p-2 focus-within:border-purple-400 dark:focus-within:border-purple-400 transition-all duration-300">
-                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3 shadow-lg">
+                {/* Mobile responsive layout */}
+                <div className="relative flex flex-col sm:flex-row items-center bg-white/90 dark:bg-slate-700/50 backdrop-blur-sm border-2 border-white/50 dark:border-slate-600/50 rounded-3xl sm:rounded-full p-4 sm:p-2 focus-within:border-purple-400 dark:focus-within:border-purple-400 transition-all duration-300">
+                  {/* Email Icon */}
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-4 sm:mb-0 sm:mr-3 shadow-lg">
                     <RiMailFill className="text-white text-xl" />
                   </div>
                   
+                  {/* Email Input */}
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email address"
-                    className="flex-1 bg-transparent text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-slate-400 text-lg focus:outline-none px-4"
+                    className="w-full sm:flex-1 bg-transparent text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-slate-400 text-lg focus:outline-none px-4 mb-4 sm:mb-0 text-center sm:text-left"
                     required
                   />
                   
+                  {/* Subscribe Button */}
                   <button
                     type="submit"
                     disabled={isSubmitting || !email}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    className="relative flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-blue-500 to-pink-500 hover:from-blue-600 hover:to-pink-600 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="relative w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-3 bg-gradient-to-r from-blue-500 to-pink-500 hover:from-blue-600 hover:to-pink-600 text-white font-semibold rounded-2xl sm:rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     {isSubmitting ? (
                       <>
