@@ -14,7 +14,7 @@ const ComingSoonSection = () => {
           {/* Placeholder for video */}
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-            src="videos/Spark_Voyage_Preview.mp4"
+            src="videos/Spark Voyage Game Demo.mp4"
             title="Spark Voyage Teaser"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
