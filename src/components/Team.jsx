@@ -4,7 +4,7 @@ import TeamCard from "./TeamCard";
 const teamMembers = [
   {
     name: "Nimna Ekanayake",
-    role: "Co-Founder, Game Developer & Tech Lead",
+    role: "Co-Founder, Software & Game Developer, Tech Lead",
     image: "images/Nimna2.jpg",
     github: "https://github.com/Nimnaek24",
     linkedin: "https://www.linkedin.com/in/nimna-ekanayake-b07181310/",
@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     name: "Ashinshanee Indrachapa",
-    role: "Co-Founder, Project Manager & Tech Lead",
+    role: "Co-Founder, Project Manager, Software & Game Developer, Tech Lead",
     image: "images/Ashi.jpg",
     github: "https://github.com/Ashinshanee02",
     linkedin: "https://www.linkedin.com/in/ashiathukorala",
@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: "Isuri Perera",
-    role: "Data Scientist, AI/ML Engineer & Software Developer",
+    role: "Data Scientist, AI/ML Engineer, Backend Developer",
     image: "images/isuri.jpg",
     github: "https://github.com/isuriperera1",
     linkedin: "https://www.linkedin.com/in/isuri-perera1/",
