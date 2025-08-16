@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     name: "Ashinshanee Indrachapa",
-    role: "Co-Founder, Game Developer & Tech Lead",
+    role: "Co-Founder, Project Manager & Tech Lead",
     image: "images/Ashi.jpg",
     github: "https://github.com/Ashinshanee02",
     linkedin: "https://www.linkedin.com/in/ashiathukorala",
